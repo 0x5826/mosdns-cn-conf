@@ -1,0 +1,38 @@
+server_addr: 0.0.0.0:53
+cache_size: 8192
+lazy_cache_ttl: 7200
+lazy_cache_reply_ttl: 60
+redis_cache: ""
+min_ttl: 300
+max_ttl: 7200
+hosts:
+- hosts.txt
+arbitrary: []
+blacklist_domain:
+- geosite.dat:category-ads-all
+insecure: false
+ca: []
+debug: false
+log_file: mosdns-cn.log
+upstream: []
+local_upstream:
+- geosite.dat:cn
+- geosite.dat:apple-cn
+- geosite.dat:google-cn
+- geosite.dat:nintendo
+local_ip:
+- geoip.dat:cn
+local_domain:
+- geosite.dat:cn
+- geosite.dat:apple-cn
+- geosite.dat:google-cn
+local_latency: 50
+remote_upstream:
+- https://1.1.1.1/dns-query
+- https://8.8.8.8/dns-query
+- https://doh.0x5826.workers.dev/dns-query
+- https://a.passcloud.xyz/dns-query
+remote_domain:
+- geosite.dat:geolocation-!cn
+working_dir: "/config"
+cd2exe: false
