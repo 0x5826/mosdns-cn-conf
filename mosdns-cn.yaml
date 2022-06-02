@@ -16,10 +16,8 @@ debug: false
 log_file: mosdns-cn.log
 upstream: []
 local_upstream:
-- geosite.dat:cn
-- geosite.dat:apple-cn
-- geosite.dat:google-cn
-- geosite.dat:nintendo
+- https://doh.pub/dns-query
+- tls://223.5.5.5
 local_ip:
 - geoip.dat:cn
 local_domain:
