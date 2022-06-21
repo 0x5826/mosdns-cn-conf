@@ -7,7 +7,6 @@ min_ttl: 300
 max_ttl: 7200
 hosts:
 - hosts.txt
-arbitrary: []
 blacklist_domain:
 - geosite.dat:category-ads-all
 insecure: false
@@ -16,10 +15,9 @@ debug: false
 log_file: mosdns-cn.log
 upstream: []
 local_upstream:
-- tcp://119.29.29.29
-- tcp://223.5.5.5
-- https://1.12.12.12/dns-query
-- https://120.53.53.53/dns-query
+- 119.29.29.29
+- 114.114.114.114
+- 223.5.5.5
 local_ip:
 - geoip.dat:cn
 local_domain:
