@@ -1,6 +1,6 @@
 server_addr: 0.0.0.0:53
 cache_size: 8192
-lazy_cache_ttl: 7200
+lazy_cache_ttl: 86400
 lazy_cache_reply_ttl: 60
 redis_cache: ""
 min_ttl: 300
